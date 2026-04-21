@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aidan Flynn | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<header>
+    <h1>Aidan Flynn</h1>
+    <p>Cybersecurity Analytics & Operations Student | Penn State</p>
+    <button onclick="toggleTheme()">Toggle Theme</button>
+</header>
+
+<section id="about">
+    <h2>About Me</h2>
+    <p>
+        I am a cybersecurity student at Penn State University focused on analytics, security operations, and technology-driven problem solving. 
+        I have experience working with OSINT, social network analysis, and software development through hands-on academic projects. 
+        I am seeking opportunities that allow me to grow in a challenging and innovation-driven environment.
+    </p>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <p><strong>Penn State University</strong> — University Park, PA</p>
+    <p>Major: Cybersecurity Analytics and Operations</p>
+    <p>Expected Graduation: May 2027</p>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+
+    <div class="card">
+        <h3>Tren De Aragua Analysis</h3>
+        <p>
+            Led a research initiative analyzing organizational structure, funding streams, and international impact using OSINT and structured analytic techniques.
+            Delivered a professional intelligence-style briefing to simulate real-world security analysis.
+        </p>
+    </div>
+
+    <div class="card">
+        <h3>Vehicle Maintenance Management App</h3>
+        <p>
+            Built a Java desktop application with a GUI to track vehicle maintenance data.
+            Integrated SQLite using JDBC to enable full database functionality including CRUD operations.
+        </p>
+    </div>
+
+</section>
+
+<section id="experience">
+    <h2>Experience</h2>
+
+    <div class="job" onclick="showAlert('Jay’s Valet')">
+        <h3>Jay’s Valet</h3>
+        <p>Valet Services Associate (2021–2025)</p>
+    </div>
+
+    <div class="job" onclick="showAlert('White House Tavern')">
+        <h3>White House Tavern</h3>
+        <p>High-Volume Service Specialist (2025)</p>
+    </div>
+
+</section>
+
+<section id="skills">
+    <h2>Skills</h2>
+
+    <div class="skill">
+        <p>Networking & Security</p>
+        <div class="bar"><div style="width:90%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>SQL</p>
+        <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Java</p>
+        <div class="bar"><div style="width:80%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Data Analysis / Excel</p>
+        <div class="bar"><div style="width:85%"></div></div>
+    </div>
+
+    <div class="skill">
+        <p>Bash / Scripting</p>
+        <div class="bar"><div style="width:75%"></div></div>
+    </div>
+
+</section>
+
+<section id="volunteer">
+    <h2>Leadership & Volunteer Work</h2>
+    <p><strong>Delta Upsilon – Penn State</strong></p>
+    <p>Secretary & THON Fundraising</p>
+    <p>
+        Organized fundraising initiatives and coordinated outreach campaigns to support THON.
+        Managed internal communications and promoted member engagement across the organization.
+    </p>
+</section>
+
+<section id="contact">
+    <h2>Contact</h2>
+
+    <p>Email: Aidandennisflynn@gmail.com</p>
+    <p>Location: Aspen, CO</p>
+
+    <form onsubmit="return validateForm()">
+        <input type="text" id="name" placeholder="Your Name">
+        <input type="email" id="email" placeholder="Your Email">
+        <textarea id="message" placeholder="Your Message"></textarea>
+        <button type="submit">Send</button>
+    </form>
+
+    <p id="error"></p>
+</section>
+
+<script src="script.js"></script>
+</body>
+</html>
